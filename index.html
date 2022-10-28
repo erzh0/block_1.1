@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Block 1.1</title>
+</head>
+<body>
+  <div class="iintoo">
+    <div class="container flex">
+      <div class="iintoo-picture">
+        <img src="./img/logo.svg" alt="iintoo logo" class="iintoo-logo">
+      </div>
+      <div class="iintoo-registration">
+        <h1 class="registration-title">Get iintoo it today</h1>
+        <p class="registration-text">There is no charge or obligation upon registration.</p>
+        <div class="registration-social social flex">
+          <a href="#" class="social-facebook social-item">Register with Facebook</a>
+          <a href="#" class="social-linkedin social-item">Register with LinkedIn</a>
+        </div>
+        <div class="registration-separator separator flex">
+          <div class="separator-line"></div>
+          <span class="separator-text">OR</span>
+          <div class="separator-line"></div>
+        </div>
+        <div class="registration-new">
+          <form action="#" method="post" class="flex registration-new-form form">
+            <div class="form-contact contact flex">
+              <div class="form-contact-block contact-block-email">
+                <span class="form-contact-text">Email</span>
+                <input type="email" name="email" value="gus.goodwin@gmail.com" autofocus class="contact-email form-contact-item">
+              </div>
+              <div class="form-contact-block contact-block-phone">
+                <span class="form-contact-text">Phone</span>
+                <input type="tel" name="phone" class="contact-phone form-contact-item">
+              </div>
+            </div>
+            <h2 class="form-title">What type of investor are you?</h2>
+            <p class="form-text">Select the type of investor are you below.</p>
+            <div class="form-investor investor">
+              <label class="investor-text investor-choose">
+                <input class="investor-item" type="radio" checked name="investor_type" value="individual">
+                <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
+                Individual 
+                <span class="sym"><span class="symbol">i</span></span>
+              </label>
+              <label class="investor-text investor-choose">
+                <input class="investor-item" type="radio" name="investor_type" value="business">
+                <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
+                Business 
+                <span class="sym"><span class="symbol">i</span></span>
+              </label>
+              <label class="investor-text investor-choose">
+                <input class="investor-item" type="radio" name="investor_type" value="ira">
+                <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
+                IRA
+                <span class="sym"><span class="symbol">i</span></span>
+              </label>
+              <label class="investor-text investor-choose">
+                <input class="investor-item" type="radio" name="investor_type" value="trust">
+                <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
+                Trust
+                <span class="sym"><span class="symbol">i</span></span>
+              </label>
+            </div>
+            <div class="investor-descr">
+              <div class="investor-descr-individual investor-descr-text">
+                I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
+              </div>
+            </div>
+            <div class="registration-new-agreement agreement">
+              <input type="checkbox" id="agreement" class="agreement-checkbox" required>
+              <label for="agreement" class="agreement-text">I agree to the terms and receiving notifications from iintoo</label>
+              <a href="#" class="agreement-terms">View full terms</a>
+            </div>
+            <button type="submit" class="btn-reset btn registration-new-bth">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
