@@ -106,7 +106,6 @@ body {
 .iintoo-picture {
   padding: 45px;
   flex-basis: 50%;
-  min-height: 1000px;
   background: transparent url('../img/bg.jpg') no-repeat center center / cover;
 }
 
@@ -235,7 +234,11 @@ body {
 }
 
 .form-investor {
-  margin-bottom: 30px;
+  margin-bottom: 145px;
+}
+
+.investor {
+  position: relative;
 }
 
 .investor-item {
@@ -244,8 +247,8 @@ body {
 }
 
 .investor-choose {
-  position: relative;
-  padding-left: 30px;
+  align-items: flex-end;
+  gap: 5px;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -257,9 +260,7 @@ body {
 }
 
 .choose-out-sym {
-  position: absolute;
-  left: 5px;
-  top: 3px;
+  margin-right: 5px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -290,7 +291,19 @@ body {
   margin-bottom: 45px;
 }
 
+/* Лучше было бы использовать JS, но что есть, то есть.
+   Сейчас место для investor-descr-text фиксирована и это проблема.
+   Но использование css для такого рода манипуляции ограничено. */
+
+.investor-item:checked ~ .investor-descr-text {
+  display: block;
+}
+
 .investor-descr-text {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
   padding: 15px;
   max-width: 255px;
   font-size: 14px;
@@ -299,7 +312,7 @@ body {
   opacity: 0.6;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .agreement {
@@ -324,16 +337,118 @@ body {
 }
 
 .sym {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 0.7em;
-  height: 0.7em;
-  border: 1px solid #000;
-  border-radius: 100%;
-  opacity: 0.7;
+  color: #000;
+  font-size: 0.7em;
+  opacity: 0.4;
 }
 
-.symbol {
-  font-size: 0.6em;
+/* media запросы */
+@media (max-width: 1440px) {
+  .iintoo {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1366px) {
+  .iintoo-registration {
+    padding: 110px 38px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .iintoo-registration {
+    padding: 55px 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .social,
+  .contact {
+    flex-direction: column;
+  }
+  
+  .social-facebook,
+  .contact-block-email {
+    margin-bottom: 24px;
+  }
+
+  .investor {
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 24px;
+  }
+
+  .investor-choose:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .iintoo-picture {
+    padding: 15px;
+    background: none;
+    background-color: #255A9B;
+    flex-basis: 100%;
+  }
+
+  .social,
+  .contact {
+    flex-direction: row;
+  }
+
+  .social-facebook,
+  .contact-block-email {
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
+
+  .investor {
+    flex-wrap: nowrap;
+  }
+
+  .investor-choose:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .iintoo-registration {
+    padding: 40px 24px;
+    flex-basis: 100%;
+  }
+
+  .social,
+  .contact {
+    flex-direction: column;
+  }
+
+  .separator {
+    justify-content: flex-start;
+  }
+
+  .social-facebook,
+  .contact-block-email {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .investor {
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 24px;
+  }
+
+  .investor-choose:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .investor-descr-text {
+    top: 60px;
+  }
 }

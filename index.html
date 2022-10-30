@@ -40,37 +40,50 @@
             </div>
             <h2 class="form-title">What type of investor are you?</h2>
             <p class="form-text">Select the type of investor are you below.</p>
-            <div class="form-investor investor">
-              <label class="investor-text investor-choose">
+            <div class="form-investor investor flex">
+              <label class="investor-text investor-choose flex">
                 <input class="investor-item" type="radio" checked name="investor_type" value="individual">
                 <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
                 Individual 
-                <span class="sym"><span class="symbol">i</span></span>
+                <a href="#" class="btn-reset sym">&#x24D8;</a>
+                <span class="investor-descr-individual investor-descr-text">
+                  I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
+                </span>
               </label>
-              <label class="investor-text investor-choose">
+              <label class="investor-text investor-choose flex">
                 <input class="investor-item" type="radio" name="investor_type" value="business">
                 <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
                 Business 
-                <span class="sym"><span class="symbol">i</span></span>
+                <a href="#" class="btn-reset sym">&#x24D8;</a>
+                <span class="investor-descr-business investor-descr-text">
+                  Business
+                </span>
               </label>
-              <label class="investor-text investor-choose">
+              <label class="investor-text investor-choose flex">
                 <input class="investor-item" type="radio" name="investor_type" value="ira">
                 <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
                 IRA
-                <span class="sym"><span class="symbol">i</span></span>
+                <a href="#" class="btn-reset sym">&#x24D8;</a>
+                <span class="investor-descr-ira investor-descr-text">
+                  IRA
+                </span>
               </label>
-              <label class="investor-text investor-choose">
+              <label class="investor-text investor-choose flex">
                 <input class="investor-item" type="radio" name="investor_type" value="trust">
                 <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
                 Trust
-                <span class="sym"><span class="symbol">i</span></span>
+                <a href="#" class="btn-reset sym">&#x24D8;</a>
+                <span class="investor-descr-trust investor-descr-text">
+                  Trust 
+                </span>
               </label>
             </div>
-            <div class="investor-descr">
+            <!-- Тут будет блок с карточками investor-type-description -->
+            <!-- <div class="investor-descr">
               <div class="investor-descr-individual investor-descr-text">
                 I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
               </div>
-            </div>
+            </div> -->
             <div class="registration-new-agreement agreement">
               <input type="checkbox" id="agreement" class="agreement-checkbox" required>
               <label for="agreement" class="agreement-text">I agree to the terms and receiving notifications from iintoo</label>
