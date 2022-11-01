@@ -8,92 +8,101 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Block 1.1</title>
 </head>
-<body>
-  <div class="iintoo">
-    <div class="container flex">
-      <div class="iintoo-picture">
-        <img src="./img/logo.svg" alt="iintoo logo" class="iintoo-logo">
-      </div>
-      <div class="iintoo-registration">
+<body class="iintoo">
+  <div class="container flex">
+    <header class="iintoo-picture">
+      <img src="./img/logo.svg" alt="iintoo logo" class="iintoo-logo">
+    </header>
+    <main class="iintoo-registration">
+      <header>
         <h1 class="registration-title">Get iintoo it today</h1>
         <p class="registration-text">There is no charge or obligation upon registration.</p>
-        <div class="registration-social social flex">
-          <a href="#" class="social-facebook social-item">Register with Facebook</a>
-          <a href="#" class="social-linkedin social-item">Register with LinkedIn</a>
-        </div>
-        <div class="registration-separator separator flex">
-          <div class="separator-line"></div>
-          <span class="separator-text">OR</span>
-          <div class="separator-line"></div>
-        </div>
-        <div class="registration-new">
-          <form action="#" method="post" class="flex registration-new-form form">
-            <div class="form-contact contact flex">
-              <div class="form-contact-block contact-block-email">
-                <span class="form-contact-text">Email</span>
-                <input type="email" name="email" value="gus.goodwin@gmail.com" autofocus class="contact-email form-contact-item">
-              </div>
-              <div class="form-contact-block contact-block-phone">
-                <span class="form-contact-text">Phone</span>
-                <input type="tel" name="phone" class="contact-phone form-contact-item">
-              </div>
-            </div>
-            <h2 class="form-title">What type of investor are you?</h2>
-            <p class="form-text">Select the type of investor are you below.</p>
-            <div class="form-investor investor flex">
-              <label class="investor-text investor-choose flex">
-                <input class="investor-item" type="radio" checked name="investor_type" value="individual">
-                <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
-                Individual 
-                <a href="#" class="btn-reset sym">&#x24D8;</a>
-                <span class="investor-descr-individual investor-descr-text">
-                  I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
-                </span>
-              </label>
-              <label class="investor-text investor-choose flex">
-                <input class="investor-item" type="radio" name="investor_type" value="business">
-                <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
-                Business 
-                <a href="#" class="btn-reset sym">&#x24D8;</a>
-                <span class="investor-descr-business investor-descr-text">
-                  Business
-                </span>
-              </label>
-              <label class="investor-text investor-choose flex">
-                <input class="investor-item" type="radio" name="investor_type" value="ira">
-                <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
-                IRA
-                <a href="#" class="btn-reset sym">&#x24D8;</a>
-                <span class="investor-descr-ira investor-descr-text">
-                  IRA
-                </span>
-              </label>
-              <label class="investor-text investor-choose flex">
-                <input class="investor-item" type="radio" name="investor_type" value="trust">
-                <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
-                Trust
-                <a href="#" class="btn-reset sym">&#x24D8;</a>
-                <span class="investor-descr-trust investor-descr-text">
-                  Trust 
-                </span>
-              </label>
-            </div>
-            <!-- Тут будет блок с карточками investor-type-description -->
-            <!-- <div class="investor-descr">
-              <div class="investor-descr-individual investor-descr-text">
-                I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
-              </div>
-            </div> -->
-            <div class="registration-new-agreement agreement">
-              <input type="checkbox" id="agreement" class="agreement-checkbox" required>
-              <label for="agreement" class="agreement-text">I agree to the terms and receiving notifications from iintoo</label>
-              <a href="#" class="agreement-terms">View full terms</a>
-            </div>
-            <button type="submit" class="btn-reset btn registration-new-bth">Create Account</button>
-          </form>
-        </div>
+      </header>
+      <section class="registration-social social flex">
+        <a href="#" aria-label="registration with Facebook" class="social-facebook social-item">Register with Facebook</a>
+        <a href="#" aria-label="registration with LinkedIn" class="social-linkedin social-item">Register with LinkedIn</a>
+      </section>
+      <div class="registration-separator separator flex">
+        <div class="separator-line"></div>
+        <span class="separator-text">OR</span>
+        <div class="separator-line"></div>
       </div>
-    </div>
+      <section class="registration-new">
+        <form action="#" method="post" class="flex registration-new-form form">
+          <div class="form-contact contact flex">
+            <div class="form-contact-block contact-block-email">
+              <span class="form-contact-text">Email</span>
+              <input type="email" name="email" value="gus.goodwin@gmail.com" autofocus class="contact-email form-contact-item">
+            </div>
+            <div class="form-contact-block contact-block-phone">
+              <span class="form-contact-text">Phone</span>
+              <input type="tel" name="phone" class="contact-phone form-contact-item">
+            </div>
+          </div> 
+          <h2 class="form-title">What type of investor are you?</h2>
+          <p class="form-text">Select the type of investor are you below.</p>
+          <div class="form-investor investor flex">
+            <label class="investor-text investor-choose flex">
+              <input class="investor-item" type="radio" checked name="investor_type" value="individual">
+              <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
+              Individual 
+              <a href="#" aria-label="more information" class="btn-reset sym">&#x24D8;</a>
+              <span class="investor-descr-individual investor-descr-text">
+                I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
+              </span>
+            </label>
+            <label class="investor-text investor-choose flex">
+              <input class="investor-item" type="radio" name="investor_type" value="business">
+              <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
+              Business 
+              <a href="#" aria-label="more information" class="btn-reset sym">&#x24D8;</a>
+              <span class="investor-descr-business investor-descr-text">
+                Business
+              </span>
+            </label>
+            <label class="investor-text investor-choose flex">
+              <input class="investor-item" type="radio" name="investor_type" value="ira">
+              <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
+              IRA
+              <a href="#" aria-label="more information" class="btn-reset sym">&#x24D8;</a>
+              <span class="investor-descr-ira investor-descr-text">
+                IRA
+              </span>
+            </label>
+            <label class="investor-text investor-choose flex">
+              <input class="investor-item" type="radio" name="investor_type" value="trust">
+              <span class="choose-out-sym"><span class="choose-in-sym"></span></span>
+              Trust
+              <a href="#" aria-label="more information" class="btn-reset sym">&#x24D8;</a>
+              <span class="investor-descr-trust investor-descr-text">
+                Trust 
+              </span>
+            </label>
+          </div>
+          <!-- Тут будет блок с карточками investor-type-description -->
+          <!-- <div class="investor-descr">
+            <div class="investor-descr-individual investor-descr-text active">
+              I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
+            </div>
+            <div class="investor-descr-business investor-descr-text">
+              Business
+            </div>
+            <div class="investor-descr-ira investor-descr-text">
+              IRA
+            </div>
+            <div class="investor-descr-trust investor-descr-text">
+              Trust
+            </div>
+          </div> -->
+          <div class="registration-new-agreement agreement">
+            <input type="checkbox" id="agreement" class="agreement-checkbox" required>
+            <label for="agreement" class="agreement-text">I agree to the terms and receiving notifications from iintoo</label>
+            <a href="#" aria-label="full agreement terms" class="agreement-terms">View full terms</a>
+          </div>
+          <button type="submit" aria-label="Create Account" class="btn-reset btn registration-new-bth">Create Account</button>
+        </form>
+      </section>
+    </main>
   </div>
 </body>
 </html>

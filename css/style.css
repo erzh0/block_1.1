@@ -97,10 +97,21 @@ body {
   border-radius: 5px;
 }
 
+.active {
+  display: block;
+  position: relative;
+  opacity: 1;
+}
+
 /* iintoo */
 .iintoo {
   padding: 100px 80px;
   background-color: #EFF6FF;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .iintoo-picture {
